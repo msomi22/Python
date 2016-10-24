@@ -1,0 +1,17 @@
+﻿
+
+1) Start new project
+
+django-admin startproject myproject
+
+myproject is the project name
+
+
+
+2) Start-server 
+
+python manage.py runserver
+
+3) template 
+
+/usr/lib/python2.7/dist-packages/django/contrib/admin/templates

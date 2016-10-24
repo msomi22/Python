@@ -1,0 +1,35 @@
+
+{% extends "header.html" %}
+
+{% block title %} My Home Page {% endblock %}
+
+{% block content %}
+
+<div class="wrapper">
+	
+<h1> Welcome to Python Django  <p> Today is: {{today_date}} </p>           </h1> 
+
+  {% if today_date.day == 1 %}
+
+  <h3> First day of month </h3>
+
+  {% elif today_date.day == 30 %}
+  
+  <h3> Last day of month </h3>
+   
+  {% else %}
+
+  <h3> I dont know </h3>
+
+  {%endif%}
+ 
+  <p>
+  {% for day in days_of_week%}
+
+  {{day}} </p>
+
+  {% endfor %}
+
+</div>
+
+{% endblock %}
