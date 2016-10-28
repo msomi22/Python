@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> {% block title %} Page Title  {% endblock %}</title>
+</head>
+<style type="text/css">
+	.wrapper{
+		width: 700px;
+		height: 800px;
+		margin: 10px auto;
+		background-color: gray;
+	}
+</style>
+<body>
+{% block content %}
+
+Body Content
+
+{% endblock %}
+
+</body>
+</html>
